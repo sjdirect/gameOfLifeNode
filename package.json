@@ -1,0 +1,7 @@
+{
+  "name": "game-of-life",
+  "version": "0.0.1",
+  "dependencies": {
+    "lodash": "^4.8.2"
+  }
+}
