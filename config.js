@@ -1,5 +1,8 @@
 var config = {
-    repititions: 2
+    liveCell: "*",
+    deadCell: ".",
+    maxRow: 4,
+    maxColumns: 8
 };
 
 module.exports = config;

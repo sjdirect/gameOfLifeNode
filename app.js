@@ -1,19 +1,16 @@
-var config = require('./config');
-var GameOfLife = require('./gameOfLife');
-var gol = new GameOfLife();
+var GameOfLife  = require('./gameOfLife');
+var gol         = new GameOfLife();
 
 var firstGeneration = [
     ['.','.','.','.','.','.','.','.'],
     ['.','.','.','.','*','.','.','.'],
     ['.','.','.','*','*','.','.','.'],
-    ['.','.','.','.','.','.','.','.'],
+    ['.','.','.','.','.','.','.','.']
 ];
 
-var nextGeneration = firstGeneration;
-for(var i = 1; i <= config.repititions; i++)
-{
-    console.log("Generation: " + i);
-    gol.printGeneration(nextGeneration);
+console.log("Generation: 1");
+gol.printGeneration(firstGeneration);
 
-    nextGeneration = gol.getNextGeneration(nextGeneration);
-}
+var nextGeneration = gol.getNextGeneration(firstGeneration);
+console.log("Generation: 2");
+gol.printGeneration(nextGeneration);
